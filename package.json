@@ -1,0 +1,19 @@
+{
+  "name": "interview-prep",
+  "version": "1.0.0",
+  "description": "This repository will be used for consolidating all practice javascript interview questions that I complete.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rusalshrestha98/interview-prep.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rusalshrestha98/interview-prep/issues"
+  },
+  "homepage": "https://github.com/rusalshrestha98/interview-prep#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}
