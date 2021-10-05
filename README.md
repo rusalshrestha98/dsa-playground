@@ -1,0 +1,1 @@
+This repository will be used for consolidating all practice javascript interview questions that I complete.
