@@ -12,10 +12,17 @@
 // ahoj - czech republic
 // czesc - polish
 
-const validateHello = (greeting) => {
-    let input = greeting.toLowerCase();
+const validateHello = (greetings) => {
+    let words = greetings.toLowerCase().split(" ");
+    console.log(words)
     const allGreetings = ["hello", "ciao", "salut", "hallo", "hola", "ahoj", "czesc"];
-    return allGreetings.includes(greeting);
+    for (i = 0; i < allGreetings.length; i++) {
+        if (words.includes(allGreetings[i])) {
+            return true;
+        }
+    }
+    return false;
 }
 
-console.log(validateHello("hello"));
+
+console.log(validateHello("viSta hoLA? tScHuss! HOw!"));
