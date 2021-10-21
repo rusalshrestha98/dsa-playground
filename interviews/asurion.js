@@ -13,12 +13,12 @@ function transform(arr) {
       if (arr[i] == arr[-1]) { // if yes, don't grab subsequent elements
         return;
       } else { // if no, multiple all subsequent elements with current index and push into result array
-        let currElement = arr[i];
-        let subElements = arr.slice(i + 1);
-        subElements.map((d) => {
+        let currElement = arr[i]; // set current element
+        const subElements = arr.slice(i + 1); // grab subsequent elements
+        subElements.map((d) => { // multiply curreent element with subsequent elements
           currElement = currElement * d;
         })
-        resultArr.push(currElement) 
+        resultArr.push(currElement) // push current element into results array
       }
     }
     
