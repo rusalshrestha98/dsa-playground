@@ -10,15 +10,24 @@
 
 
 const mergeArrays = (arr1, arr2) => {
-  // if both arrays are empty
-  if (arr1.length ==0 && arr2.length == 0) {
-    return [];
-  }
-  // concat and sort
-  let arr3 = arr1.concat(arr2).sort((a, b) => a - b);
-  // remove duplicates
-  
-}
+  // // if both arrays are empty
+  // if (arr1.length ==0 && arr2.length == 0) {
+  //   return [];
+  // }
+  // // concat and sort
+  // let arr3 = arr1.concat(arr2).sort((a, b) => a - b);
+  // // remove duplicates
+  // let result = [];
+  // arr3.map((a) => {
+  //   if (!result.includes(a)) {
+  //     result.push(a);
+  //   };
+  // });
+  // return result;
+
+  // one liner
+  return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))));
+};
 
 console.log(mergeArrays([1, 2, 3, 4, 5], [6, 7, 8, 9, 10]));
 console.log(mergeArrays([1, 3, 5, 7, 9], [100, 8, 6, 4, 2]));
