@@ -9,9 +9,14 @@
 //     return false
 
 const correctTail = (bod, tail) => {
-  // sub = bod.substr(body.length-(tail.length));
-  console.log(tail.length);
-  // return sub;
+  // sub = bod.split('').pop();
+  // if (sub == tail) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+  // return bod[bod.length-1] === tail;
+  return bod.endsWith(tail);
 }
 
 console.log(correctTail("Fox", "x"));
