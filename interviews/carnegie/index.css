@@ -1,13 +1,8 @@
 body {
   font-weight: 400;
-  font-size: 0.6rem;
   color: white;
   font-family: 'Acherus Grotesque';
   text-align: center;
-}
-
-img {
-  max-width: 100%;
 }
 
 .modal {
@@ -15,18 +10,22 @@ img {
   flex-direction: column;
   margin-top: 10rem;
   margin-inline: auto;
-  width: min(60%, 70rem);
+  width: min(60%, 80rem);
   padding: 2rem;
   border-radius: 1.875rem;
   background-color: rgb(99,0,49)
 }
 
 .header {
-  
+  font-size: 1.5rem;
 }
 
 .content {
-  
+  font-size: 1rem;
+}
+
+.image {
+  max-width: 100%;
 }
 
 .button-container {
@@ -46,31 +45,51 @@ img {
 /* small devices: small phones */
 @media (min-width: 360px) {
   body {
-    font-size: 0.8rem;
     background-color: red;
+  }
+  .header {
+    font-size: 2rem;
+  }
+  .content {
+    font-size: 1.1rem;
   }
 }
 
 /* medium devices: large phones, tablets */
 @media (min-width: 768px) {
   body {
-    font-size: 1rem;
     background-color: blue;
+  }
+  .header {
+    font-size: 2.5rem;
+  }
+  .content {
+    font-size: 1.2rem;
   }
 }
 
 /* large devices: small monitors */
 @media (min-width: 1366px) {
   body {
-    font-size: 1.2rem;
     background-color: orange;
+  }
+  .header {
+    font-size: 3rem;
+  }
+  .content {
+    font-size: 1.3rem;
   }
 }
 
 /* xlarge devices: big monitors */
 @media (min-width: 1900px) {
   body {
-    font-size: 1.4rem;
     background-color: pink;
+  }
+  .header {
+    font-size: 3.5rem;
+  }
+  .content {
+    font-size: 1.4rem;
   }
 }
