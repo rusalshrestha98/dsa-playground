@@ -5,25 +5,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
-  <script src=index.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
   <!-- <button onclick="showLightbox()">Open Lightbox</button> -->
-  <div id="lightbox" class="modal" aria-label="lighbox popup">
+  <div class="modal">
     <h1 class="header" aria-label="Come Visit Our Campus">
       Come Visit Our Campus
     </h1>
-    <main class="content" aria-label="Content of the lightbox">
+    <main class="content">
       <p>Take a tour of campus and learn about our 100+ areas of study, the admissions process, and financial aid.</p>
-      <img src="./image.jpg" class="image" alt="Virginia Tech Campus">
+      <img src="./image.jpg" class="image" alt="image" aria-labelledby="Virginia Tech Campus Photo">
     </main>
     <div class="button-container">
-      <button class="button" aria-label="Register Now Button">
+      <button class="button" onclick="registerNow()">
         Register Now
       </button>
-      <button class="button" aria-label="View Visit Options Button">
+      <button class="button" onclick="viewVisitOptions()">
         View Visit Options
       </button>
     </div>
   </div>
+
 </body>
