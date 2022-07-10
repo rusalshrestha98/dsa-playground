@@ -8,7 +8,11 @@ const viewVisitOptions = () => {
 
 const showModal = () => {
   let modal = document.querySelector('.modal');
-  modal.style.display = "block";
+  if (modal.style.display === "none") {
+    modal.style.display = "block";
+  } else {
+    modal.style.display = "none";
+  }
 }
 
 document.addEventListener('click', function(e) {
