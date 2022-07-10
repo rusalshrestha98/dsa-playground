@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <title>Carnegie Technical Interview Assesment</title>
+  <html lang="en"></html>
   <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,23 +9,22 @@
   <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-  <!-- <button onclick="showLightbox()">Open Lightbox</button> -->
-  <div class="modal">
-    <h1 class="header" aria-label="Come Visit Our Campus">
+  <button class="show-modal-button" onclick="showModal()">Open Lightbox</button>
+  <div class="modal" aria-modal="true" aria-labelledby="alert_dialog">
+    <h1 class="header" tabindex="0">
       Come Visit Our Campus
     </h1>
     <main class="content">
-      <p>Take a tour of campus and learn about our 100+ areas of study, the admissions process, and financial aid.</p>
-      <img src="./image.jpg" class="image" alt="image" aria-labelledby="Virginia Tech Campus Photo">
+      <p tabindex="0">Take a tour of campus and learn about our 100+ areas of study, the admissions process, and financial aid.</p>
+      <img src="./image.jpg" class="image" alt="Virginia Tech campus" >
+      <div class="button-container">
+        <button class="button" onclick="registerNow()">
+          Register Now
+        </button>
+        <button class="button" onclick="viewVisitOptions()">
+          View Visit Options
+        </button>
+      </div>
     </main>
-    <div class="button-container">
-      <button class="button" onclick="registerNow()">
-        Register Now
-      </button>
-      <button class="button" onclick="viewVisitOptions()">
-        View Visit Options
-      </button>
-    </div>
   </div>
-
 </body>

@@ -5,6 +5,10 @@ body {
   text-align: center;
 }
 
+/* .show-modal-button {
+  margin-top: 20rem;
+} */
+
 .modal {
   display: flex;
   flex-direction: column;
@@ -13,7 +17,8 @@ body {
   width: min(60%, 80rem);
   padding: 2rem;
   border-radius: 1.875rem;
-  background-color: rgb(99,0,49)
+  background-color: rgb(99,0,49);
+  display: none;
 }
 
 .header {
@@ -115,9 +120,3 @@ body {
     font-size: 1.2rem;
   }
 }
-
-/* TO DO
-ACCESSIBILITY FOR KEYBOARD (TABBING)
-ARIA LABEL FOR SCREEN READERS 
-BUTTON TO OPEN LIGHTBOX
-CLOSE LIGHTBOX BY CLICKING OUTSIDE OF IT */
