@@ -12,8 +12,7 @@
 // PHP, Python, Haskell and Lua) or "¥" (Rust).
 
 const bonusTime = (salary, bonus) => {
-  let a = bonus ? salary * 10 : salary;
-  return "£" + a.toString();
+  return "£" + (bonus ? salary * 10 : salary).toString();
 }
 
 console.log(bonusTime(10000, true));
