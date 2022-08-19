@@ -11,7 +11,7 @@
 // I is misinterpreted as 1
 
 const correct = (string) => {
-  
+  return string.split('').filter();
 }
 
 console.log(correct("L0ND0N"));
