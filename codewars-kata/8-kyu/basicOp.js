@@ -10,7 +10,7 @@
 // ('/', 49, 7) --> 7
 
 const basicOp = (op, v1, v2) => {
-  // // original way i did it
+  // original way i did it
   // if (op === "+") {
   //   return v1 + v2;
   // } else if (op === "-") {
