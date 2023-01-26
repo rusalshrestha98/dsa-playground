@@ -8,7 +8,7 @@
 // mango(9, 5) ==> 30   # 6 mangoes for $5 per unit = $30; +3 mangoes for free
 
 const mango = (quantity, price) => {
-
+  return price * (quantity - Math.floor(quantity / 3));
 }
 
 console.log(mango(3,3));
