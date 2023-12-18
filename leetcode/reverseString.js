@@ -14,7 +14,7 @@
 // s[i] is a printable ascii character.
 
 const reverseString = (s) => {
-  return s.toReversed();
+  return s.reverse();
 };
 
 console.log(reverseString(["h", "e", "l", "l", "o"]));
