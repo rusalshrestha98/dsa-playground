@@ -8,7 +8,6 @@ const grow = (array) => {
 };
 
 // const grow=x=> x.reduce((a,b) => a*b);
-// test change
 
 console.log(grow([1,2,3]));
 console.log(grow([4,1,1,1,4]));
