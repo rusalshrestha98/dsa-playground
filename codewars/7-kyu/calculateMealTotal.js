@@ -3,11 +3,7 @@
 // You will be given the subtotal, the tax as a percentage and the tip as a percentage.
 // Please round your result to two decimal places.
 
-const calculate_total = (
-  subtotal: number,
-  tax: number,
-  tip: number
-): number => {
+const calculate_total = (subtotal, tax, tip) => {
   const total = subtotal * (1 + tax / 100 + tip / 100);
 
   return Number(total.toFixed(2));
