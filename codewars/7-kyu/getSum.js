@@ -3,12 +3,19 @@
 // Note: a and b are not ordered!
 
 const getSum = (a, b) => {
-  let sum = 0;
-  for (let i = a; i <= b; i++) {
-    sum++;
-  }
+  if (a === b) return a;
 
+  let first = Math.min(a, b);
+  let second = Math.max(a, b);
+  let sum = 0;
+
+  for (let i = first; i <= second; i++) {
+    sum += i;
+    console.log(i);
+  }
   return sum;
 };
 
-console.log(getSum(-1, 2));
+console.log(getSum(0, -1));
+console.log(getSum(0, 1));
+console.log(getSum(2, 2));
