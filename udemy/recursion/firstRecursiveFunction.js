@@ -1,15 +1,3 @@
-// Recursive Version
-function countDown(num) {
-  if (num <= 0) {
-    console.log("All done!");
-    return;
-  }
-  console.log(num);
-  num--;
-  countDown(num);
-}
-countDown(3);
-
 // Iterative Version
 function countDown(num) {
   for (var i = num; i > 0; i--) {
@@ -17,3 +5,17 @@ function countDown(num) {
   }
   console.log("All done!");
 }
+
+// Recursive Version
+function countDown(num) {
+  // base case: condition where recursion ends
+  if (num <= 0) {
+    console.log("All done!");
+    return;
+  }
+  console.log(num);
+  // different input so we don't call it over and over
+  num--;
+  countDown(num);
+}
+countDown(3);
