@@ -17,9 +17,9 @@ const validAnagram = (s, t) => {
     // compare each letter to the frequency counter
     let letter = t[i];
 
-    // if the frequency counter has the letter, return false
+    // if the frequency counter doesn't have the letter, return false
     if (!frequencyCounter[letter]) return false;
-    // if the frequency counter doesn't have the letter, subtract 1 from the letter frequency
+    // if the frequency counter has the letter, subtract 1 from the letter frequency
     else frequencyCounter[letter] -= 1;
   }
 
