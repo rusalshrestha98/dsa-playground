@@ -18,11 +18,11 @@ function search(array, val) {
 
   while (min <= max) {
     let middle = Math.floor((min + max) / 2);
-    let currentElement = array[middle];
+    let middleElement = array[middle];
 
-    if (array[middle] < val) {
+    if (middleElement < val) {
       min = middle + 1;
-    } else if (array[middle] > val) {
+    } else if (middleElement > val) {
       max = middle - 1;
     } else {
       return middle;
